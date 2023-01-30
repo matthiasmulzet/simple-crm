@@ -12,7 +12,6 @@ export class DialogAddUserComponent {
   user: User = new User();
   birthDate: Date | undefined;
 
-
   loading: boolean = false;
 
   constructor(public dialogRef: MatDialogRef<DialogAddUserComponent>, private firestore: AngularFirestore) {
