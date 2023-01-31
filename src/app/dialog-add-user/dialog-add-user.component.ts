@@ -20,7 +20,6 @@ export class DialogAddUserComponent {
 
   saveUser() {
     this.user.birthDate = this.birthDate?.getTime();
-    console.log("current User is", this.user);
     this.loading = true;
 
     this.firestore
@@ -28,7 +27,6 @@ export class DialogAddUserComponent {
       .add(this.user.toJSON())
       .then((result: any) => {
         this.loading = false;
-        console.log('Adding user finished', result)
         this.dialogRef.close()
       });
   }
