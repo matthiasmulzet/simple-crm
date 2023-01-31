@@ -7,7 +7,6 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'simple-crm';
 
   constructor(firestore: AngularFirestore) { }
 }
